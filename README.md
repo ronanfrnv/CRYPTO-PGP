@@ -56,5 +56,20 @@ Pour exporter `gpg --export-secret-keys --armor > /home/kali/secret_key.asc`
 
 Pour exporter sous format ASCII
 
+`gpg --export-secret-keys --output /root/cle_GPG/secret_key.gpg`
+
 Pour exporter sous format BINAIRE
+`
+sudo gpg --export-secret-keys --armor > /root/cle_GPG/secret_key.asc
+sudo gpg --export-secret-keys --output /root/cle_GPG/secret_key.gpg
+`
+
+Pour supprimer les clés publiques (Il faut au préalable supprimer la clé privé)
+
+`gpg --delete-keys --batch --yes <ID_de_la_clé>`
+
+Pour supprimer les clés privés 
+
+`gpg --delete-secret-keys --batch --yes <ID_de_la_clé>`
+
 
