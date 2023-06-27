@@ -80,6 +80,14 @@ Pour supprimer les clés privés
 
 Pour importer les clés `gpg --import subkey1.asc`
 
+Obtenir le fingerprint `gpg --fingerprint NOMDELACLE`
+
+L'empreinte de la clé, également appelée empreinte digitale ou fingerprint, est une représentation unique et compacte de la clé publique. Elle est généralement affichée sous la forme d'une séquence de chiffres hexadécimaux. L'empreinte permet d'identifier de manière univoque une clé spécifique parmi un grand nombre de clés.
+
+Pour signer une clé il faut importer la clé puis utiliser la commande `gpg --edit-key "lenomdelaclé" `
+Puis entrer la commande `trust`
+
+
 
 
 
