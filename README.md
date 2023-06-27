@@ -87,7 +87,8 @@ L'empreinte de la clé, également appelée empreinte digitale ou fingerprint, e
 Pour signer une clé il faut importer la clé puis utiliser la commande `gpg --edit-key "lenomdelaclé" `
 Puis entrer la commande `trust`
 
-
+Pour exporter une clé contre signé
+`gpg --armor --export CLE > test.asc`
 
 
 
