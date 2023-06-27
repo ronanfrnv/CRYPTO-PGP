@@ -25,6 +25,10 @@ Commande pour générer la clé `gpg --full-generate-key `
 
 Pour regarder les clés : `gpg –k` (clé publique) et `gpg –K` (clés secrètes) 
 
+SC = clé primaire
+E = Encrypt
+S = Signature
+
 Clé publique (public key) :
         Type : RSA 2048 bits
         Identifiant : EC4EE226BF28FA70ACD6295491AA3D54E75F528C
@@ -41,6 +45,7 @@ Il est important de noter que la clé privée correspondante à la clé publique
 Les clés publiques peuvent être partagées avec d'autres utilisateurs afin qu'ils puissent vous envoyer des messages chiffrés ou vérifier les signatures que vous avez créées. Les clés privées, en revanche, doivent rester confidentielles et ne doivent pas être partagées ou exposées.
 
 La commande `gpg --edit-key` permet de créer une sous clé pour signer les documents
+Puis add Key -> puis le type de la clé choisi
 
 Pourquoi faut-il générer tout de suite le certficiat de révocation ? `gpg --output revoke_cert.asc  --gen-revoke <ID_CLÉ_PRIVEE>`
 
@@ -53,6 +58,7 @@ Pour afficher les listes des clés
 Pour afficher la liste des signatures  `gpg --list-sigs`
 
 Pour exporter `gpg --export-secret-keys --armor > /home/kali/secret_key.asc`
+Pour exporter sa  sous clé `gpg --export-secret-subkeys --armor --output chemin_vers_fichier ID_sous_clé`
 
 Pour exporter sous format ASCII
 
@@ -73,6 +79,8 @@ Pour supprimer les clés privés
 `gpg --delete-secret-keys --batch --yes <ID_de_la_clé>`
 
 Pour importer les clés `gpg --import subkey1.asc`
+
+
 
 
 
