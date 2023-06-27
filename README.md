@@ -72,4 +72,7 @@ Pour supprimer les clés privés
 
 `gpg --delete-secret-keys --batch --yes <ID_de_la_clé>`
 
+Pour importer les clés `gpg --import subkey1.asc`
+
+
 
