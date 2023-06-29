@@ -78,9 +78,10 @@ Pour supprimer les clés privés
 
 `gpg --delete-secret-keys --batch --yes <ID_de_la_clé>`
 
-Pour importer les clés `gpg --import subkey1.asc`
+Pour importer les clés `gpg --import subkey1.asc` et depuis un serveur `gpg --keyserveur <NOM_FQDN_SERVER> --receive-keys <ID_de_la_clé>`
 
 Obtenir le fingerprint `gpg --fingerprint NOMDELACLE`
+
 
 L'empreinte de la clé, également appelée empreinte digitale ou fingerprint, est une représentation unique et compacte de la clé publique. Elle est généralement affichée sous la forme d'une séquence de chiffres hexadécimaux. L'empreinte permet d'identifier de manière univoque une clé spécifique parmi un grand nombre de clés.
 
