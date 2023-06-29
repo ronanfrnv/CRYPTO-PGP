@@ -78,7 +78,7 @@ Pour supprimer les clés privés
 
 `gpg --delete-secret-keys --batch --yes <ID_de_la_clé>`
 
-Pour importer les clés `gpg --import subkey1.asc` et depuis un serveur `gpg --keyserveur <NOM_FQDN_SERVER> --receive-keys <ID_de_la_clé>`
+Pour importer les clés `gpg --import subkey1.asc` et depuis un serveur `gpg --keyserver <NOM_FQDN_SERVER> --receive-keys <ID_de_la_clé>`
 
 Obtenir le fingerprint `gpg --fingerprint NOMDELACLE`
 
