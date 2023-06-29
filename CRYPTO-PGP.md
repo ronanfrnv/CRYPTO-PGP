@@ -90,6 +90,12 @@ Pour signer une clé il faut importer la clé puis utiliser la commande `gpg --s
 Pour exporter une clé contre signé
 `gpg --armor --export CLE > test.asc`
 
-
-
+Chiffrer un document 
+```
+gpg --recipient <ID_de_la_clé_publique_de_la_personne> --output texte_chiffré.txt --encrypt textchiffré.txt
+```
+Déchiffrer un document 
+```
+ gpg --output textenclair.txt --decrypt textechiffré.txt 
+```
 
